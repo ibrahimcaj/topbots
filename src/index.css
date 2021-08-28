@@ -20,17 +20,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.bottomFade {
-    height: 125px;
-    position: fixed;
-    bottom: 0;
-
-    left: 0;
-    right: 0;
-
-    background: linear-gradient(to bottom, #00000000 0%, #2f3136ff 100%);
-}
-
 .creditsText {
     margin: auto;
     margin-bottom: 125px;
