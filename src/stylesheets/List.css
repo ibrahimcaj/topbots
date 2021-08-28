@@ -10,12 +10,14 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
 }
 .botListItem {
     width: 500px;
     height: 64px;
 
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
