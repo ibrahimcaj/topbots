@@ -1,0 +1,41 @@
+body {
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #2f3136;
+    color: #ffffff;
+
+    margin: 0%;
+    padding: 0%;
+
+    overflow-x: hidden;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    
+    color: #00b0f4;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.bottomFade {
+    height: 125px;
+    position: fixed;
+    bottom: 0;
+
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(to bottom, #00000000 0%, #2f3136ff 100%);
+}
+
+.creditsText {
+    margin: auto;
+    margin-bottom: 125px;
+
+    color: #acacac;
+    text-align: center;
+    font-size: 12.5px;
+}

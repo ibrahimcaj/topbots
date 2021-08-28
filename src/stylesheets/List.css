@@ -1,0 +1,139 @@
+.botsList {
+    width: 500px;
+    min-height: 80px;
+
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.botListItem {
+    width: 500px;
+    height: 64px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 17px;
+    background-color: #36393f;
+}
+
+.botListInformation {
+    width: 250px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.botOverlayContainer {
+    position: relative;
+}
+.botOverlayMedal {
+    position: absolute;
+
+    width: 25px;
+    height: 25px;
+    top: -44px;
+    right: 487px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ddcc37;
+    border-radius: 100%;
+}
+.botOverlayMedalPosition {
+    font-size: 15px;
+    font-weight: bold;
+}
+.botOverlayButton {
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    right: 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #36393f;
+    border-radius: 100%;
+}
+
+.botItemAvatar {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 100%;
+    background-color: #292b2f;
+}
+.botItemUsername {
+    max-width: 130px;
+    margin-left: 10px;
+
+    font-size: 17.5px;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.botItemDiscriminator {
+    color: #acacac;
+
+    font-size: 17.5px;
+    font-weight: bold;
+}
+.botItemFlags {
+    margin-left: 2.5px;
+    font-size: 12.5px;
+}
+.botOffline {
+    color: #acacac;
+
+    text-decoration: line-through;
+}
+
+.botItemServers {
+    width: 170px;
+
+    text-align: center;
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.botItemButton {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: 100%;
+    background-color: #2f3136;
+}
+.botItemButton:hover {
+    background-color: #292b2f;
+}
+.botItemButtonIcon {
+    width: 15px;
+    height: 15px;
+
+    fill: #ffffff;
+}
