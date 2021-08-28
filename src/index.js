@@ -15,7 +15,6 @@ ReactDOM.render(
             (<a href="https://github.com/advaith1" target="_blank" rel="noreferrer">GitHub</a>,&nbsp;<a href="https://gist.github.com/advaith1/451dcbca2d7c3503d4f48d63eb918cb0" target="_blank" rel="noreferrer">Gist</a>)
             <br />
         </p>
-        <div className="bottomFade"></div>
     </React.StrictMode>,
     document.getElementById('root')
 );
