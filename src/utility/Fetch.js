@@ -5,9 +5,11 @@ import Constants from './Constants';
 
 // eslint-disable-next-line
 export default function() {
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
         const Agent = new https.Agent({ rejectUnauthorized: false });
 
-        axios.get(Constants.API, { httpsAgent: Agent }).then(resolve).catch(console.error);
+        axios.get(Constants.API, { httpsAgent: Agent }).then(resolve).catch((error) => {
+            reject(error); console.error(error);
+        });
     });
 }
