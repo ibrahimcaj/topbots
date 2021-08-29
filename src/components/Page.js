@@ -4,6 +4,7 @@ import '../stylesheets/List.css';
 
 import Fetch from '../utility/Fetch';
 import Avatar from '../components/Avatar';
+import BootstrapTooltip from '../components/BootstrapTooltip';
 import Constants from '../utility/Constants';
 
 class Page extends React.Component {
@@ -31,7 +32,10 @@ class Page extends React.Component {
                         <div className="botListInformation">
                             <Avatar bot={bot} />
 
-                            <div className={`botItemUsername ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`} style={{ textDecoration: bot.flags.includes('OFFLINE') ? 'line-through' : 'none' }}>{bot.username}</div>
+                            <BootstrapTooltip title={bot.id} interactive>
+                                <div className={`botItemUsername ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`} style={{ textDecoration: bot.flags.includes('OFFLINE') ? 'line-through' : 'none' }}>{bot.username}</div>
+                            </BootstrapTooltip>
+                            
                             <div className={`botItemDiscriminator ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`}>#{bot.discriminator || '0000'}</div>
                             {bot.flags.length > 0 ?
                                 <div className="botItemFlags">
