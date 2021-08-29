@@ -12,12 +12,33 @@ class Page extends React.Component {
         super();
 
         this.state = {
-            data: null
+            data: null,
+            message: null
         };
     }
 
+    fetchList = () => {
+        return new Promise((resolve, reject) => {
+            Fetch().then(resolve).catch(() => {
+                var counter = 10;
+
+                var interval = setInterval(() => {
+                    counter -= 1;
+                    this.setState({
+                        message: `Couldn't load the list. Trying again in ${counter + 1} seconds...`
+                    });
+
+                    if (counter === 0) {
+                        this.fetchList();
+                        clearInterval(interval);
+                    }
+                }, 1000);
+            });
+        });
+    }
+
     componentDidMount () {
-        Fetch().then((response) => {
+        this.fetchList().then((response) => {
             this.setState({
                 data: response.data
             });
@@ -81,7 +102,7 @@ class Page extends React.Component {
                 <div className="botsList">
                     <div className="botListItem" style={{ justifyContent: 'center' }}>
                         <div className="botListLoading">
-                            Loading the list... Please wait.
+                            {this.state.message || 'Loading the list... Please wait.'}
                         </div>
                     </div>
                 </div>
