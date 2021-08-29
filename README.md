@@ -1,4 +1,4 @@
-# Top Bots
-Web application that displays top 25 Discord bots.
+# [Top Bots](https://topbots.vanished.rocks/)
+List of top 25 public Discord bots!
 
-*I will probably put something here later*
+API: https://topbots.vanished.live
