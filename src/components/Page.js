@@ -64,7 +64,9 @@ class Page extends React.Component {
                                         var flag = Constants.FLAGS[key];
                                         
                                         return (
-                                            <span title={flag.title} key={index}>{flag.value}</span>
+                                            <BootstrapTooltip title={flag.title} key={index}>
+                                                <span>{flag.value}</span>
+                                            </BootstrapTooltip>
                                         );
                                     })} 
                                 </div>
