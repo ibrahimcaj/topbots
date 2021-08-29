@@ -3,8 +3,7 @@ import https from 'https';
 
 import Constants from './Constants';
 
-// eslint-disable-next-line
-export default function() {
+export default function Fetch() {
     return new Promise((resolve, reject) => {
         const Agent = new https.Agent({ rejectUnauthorized: false });
 
