@@ -23,8 +23,12 @@
     justify-content: space-between;
     align-items: center;
 
+    transition: .2s;
     border-radius: 17px;
     background-color: #36393f;
+}
+.botListItem:hover {
+    background-color: #40444b;
 }
 
 .botListInformation {
