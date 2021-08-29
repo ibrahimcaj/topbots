@@ -5,6 +5,5 @@ module.exports.MEDAL_COLORS = [
     '#df7a30'
 ];
 module.exports.FLAGS = {
-    'BOTLABS': { title: 'BlueStacks/Bot Labs Bot', value: '🅱️' },
-    'OFFLINE': { title: 'Offline', value: '❌' }
+    'BOTLABS': { title: 'BlueStacks/Bot Labs Bot', value: '🅱️' }
 }
