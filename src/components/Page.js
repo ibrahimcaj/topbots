@@ -80,7 +80,7 @@ class Page extends React.Component {
             return (
                 <div className="botsList">
                     <div className="botListItem" style={{ justifyContent: 'center' }}>
-                        <div className="botItemDiscriminator" style={{ fontSize: '15px' }}>
+                        <div className="botListLoading">
                             Loading the list... Please wait.
                         </div>
                     </div>
