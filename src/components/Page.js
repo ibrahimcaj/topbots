@@ -53,9 +53,7 @@ class Page extends React.Component {
                         <div className="botListInformation">
                             <Avatar bot={bot} />
 
-                            <BootstrapTooltip title={bot.id} interactive>
-                                <div className={`botItemUsername ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`} style={{ textDecoration: bot.flags.includes('OFFLINE') ? 'line-through' : 'none' }}>{bot.username}</div>
-                            </BootstrapTooltip>
+                            <div className={`botItemUsername ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`} style={{ textDecoration: bot.flags.includes('OFFLINE') ? 'line-through' : 'none' }}>{bot.username}</div>
                             
                             <div className={`botItemDiscriminator ${bot.flags.includes('OFFLINE') ? 'botOffline' : ''}`}>#{bot.discriminator || '0000'}</div>
                             {bot.flags.length > 0 ?
