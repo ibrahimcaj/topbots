@@ -2,7 +2,6 @@ import React from 'react';
 
 import Fetch from '../utility/Fetch';
 import Avatar from '../components/Avatar';
-import BootstrapTooltip from '../components/BootstrapTooltip';
 import Constants from '../utility/Constants';
 import '../index.css';
 import '../stylesheets/List.css';
