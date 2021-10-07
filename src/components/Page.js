@@ -64,9 +64,7 @@ class Page extends React.Component {
                                         var flag = Constants.FLAGS[key];
                                         
                                         return (
-                                            <BootstrapTooltip title={flag.title} key={index}>
-                                                <span>{flag.value}</span>
-                                            </BootstrapTooltip>
+                                            <span>{flag.value}</span>
                                         );
                                     })} 
                                 </div>
@@ -76,13 +74,11 @@ class Page extends React.Component {
                         <div className="botItemServers">{bot.servers.toLocaleString()} servers</div>
 
                         <div>
-                            <BootstrapTooltip title="Invite">
-                                <div className="botItemButton" onClick={() => window.open(`https://discord.com/api/oauth2/authorize?client_id=${bot.client}&permissions=0&scope=bot%20applications.commands`, '_blank')}>
-                                    <svg width="30" height="30" className="botItemButtonIcon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M17 0H12V13H0V18H12V30H17V18H30V13H17V0Z"/>
-                                    </svg>
-                                </div>
-                            </BootstrapTooltip>
+                            <div className="botItemButton" onClick={() => window.open(`https://discord.com/api/oauth2/authorize?client_id=${bot.client}&permissions=0&scope=bot%20applications.commands`, '_blank')}>
+                                <svg width="30" height="30" className="botItemButtonIcon" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 0H12V13H0V18H12V30H17V18H30V13H17V0Z"/>
+                                </svg>
+                            </div>
                         </div>
                         
                         <div className="botOverlayContainer">
